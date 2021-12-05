@@ -1,6 +1,6 @@
 const User = require('./User');
 const Post = require('./Post');
-const Post = require('./Comment');
+const Comment = require('./Comment');
 
 //belongsTo Post and User 
 //hasMany Post and Comments
