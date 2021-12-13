@@ -6,7 +6,6 @@ const {
     Comment
 } = require('../models');
 
-// this is teh rout for homapage
 
 router.get('/', (req, res) => {
     Post.findAll({
@@ -46,7 +45,6 @@ router.get('/', (req, res) => {
         });
 });
 
-// this the route for get one sigle post
 router.get('/post/:id', (req, res) => {
     Post.findOne({
             where: {
@@ -94,7 +92,7 @@ router.get('/post/:id', (req, res) => {
             res.status(500).json(err);
         });
 });
-//----- this is the logging rout fisrt 
+
 router.get('/login', (req, res) => {
     if (req.session.loggedIn) {
         res.redirect('/');
@@ -103,7 +101,7 @@ router.get('/login', (req, res) => {
 
     res.render('login');
 });
-// route for sign up
+
 router.get('/signup', (req, res) => {
     if (req.session.loggedIn) {
         res.redirect('/');
