@@ -146,3 +146,4 @@ router.get('/posts-comments', (req, res) => {
           res.status(500).json(err);
         });
 });
+module.exports = router;
