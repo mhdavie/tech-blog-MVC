@@ -12,7 +12,7 @@ Tech blog that uses the MVC standards. User is able to sign up, create posts, ma
 * [Application](#application)
 * [Technologies](#technologies)
 * [GitHub Repository](#Github)
-* [Heroku](#Heroku Deployed Application )
+
 
 
 ## Technologies 
